@@ -26,7 +26,7 @@ class Hangman
       return this;
    }
    
-
+   //start and run the game.
    method void run()
    {
       var boolean endGame;
@@ -62,12 +62,10 @@ class Hangman
             if(wrongGuesses = 3)
             {
                do drawLeftArm();
-
             }
             if(wrongGuesses = 4)
             {
                do drawRightLeg();
-
             }
             if(wrongGuesses = 5)
             {
@@ -83,9 +81,10 @@ class Hangman
             let endGame = -1;
          }
       }
-       
       return;
    }
+   
+   /Check winning condition
    method boolean isWin()
    {
       var int i;
@@ -101,6 +100,7 @@ class Hangman
       return -1; 
    }
    
+   //Verify whole word as the game progresses
    method boolean isCorrectGuess(char guess)
    { 
       var int i;
@@ -117,6 +117,7 @@ class Hangman
       return 0;
    }
    
+   //Default game setup for Hangman
    method void drawHangPost()
    { 
       do Screen.setColor(true);
@@ -126,9 +127,10 @@ class Hangman
       do Screen.drawRectangle(300,40,310,70);
       return;
    }
+   
+   //Main drawing functions
    method void drawHead()
    {
-        
       do Screen.drawCircle(305,90,20);
       return;
    }
@@ -158,6 +160,7 @@ class Hangman
       do Screen.drawLine(305,160, 285, 180);
       return;
    }
+   //Deallocate Object in Memory.
    method void dispose()
    {
      do Memory.deAlloc(this);
