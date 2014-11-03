@@ -1,0 +1,6 @@
+// Implements a graphical representation of the HAngman figure
+// Keeps an updated bag of guessed letters and the current word;
+
+class Hangman(){
+	
+}

@@ -1,0 +1,48 @@
+// Implements the game logic for the Hangman game.
+
+class HangmanGame {
+	// The Hangman figure:
+	field Hangman hangman;
+
+	// The current game word.
+	field string word;
+
+	// Constructs a new Hangman Game.
+	constructor HangmanGame new(){
+		let hangman = Hangman.new();
+		// This will be for testing. Can update to an array later
+		let string = "banana";
+		
+		return this;
+	}
+	
+	// Deallocates the objects memory.
+	method void dispose() {
+		do hangman.dispose();
+		do Memory.deAlloc(this);
+
+		return;
+	}
+
+	/* Starts the game. Handles the inputs from the user that controls the 
+	* Hangman's updates and the incorrect guess.
+	*/
+	method void run(){
+		var char key;
+		var boolean exit;
+
+		let exit = false;
+
+		while(~exit) {
+			//waits for a key to be pressed.
+			while (key = 0){
+				let exit=true;
+			}
+		}
+		return;
+	}
+
+	//method void updateHangman() {
+
+	//}
+}

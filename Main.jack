@@ -1,0 +1,15 @@
+/**
+* The Main class initializes a new Hangman game and starts it
+*/
+
+class Main {
+	//Initializes a new game and starts it.
+	function void main(){
+		var HangmanGame game;
+
+		let game = HangmanGame.new();
+		do game.run();
+		do game.dispose();
+		reurn;
+	}
+}
