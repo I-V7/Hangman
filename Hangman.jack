@@ -84,7 +84,7 @@ class Hangman
       return;
    }
    
-   /Check winning condition
+   //Check winning condition
    method boolean isWin()
    {
       var int i;
